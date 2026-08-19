@@ -65,13 +65,13 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 | **[MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward)** | 设备管理与监控系统，SNMP/ICMP/HTTP 探测 + Prometheus 指标 · Device management & monitoring — single-binary Go backend with embedded SvelteKit SPA |
 | **[MiBeeHive](https://github.com/Mi-Bee-Studio/MiBeeHive)** | 自托管运维工具供应链（APT / PyPI / WebDAV）· Self-hosted ops-tooling supply chain, no agent required |
 | **[seeed-esp32s3-cam](https://github.com/Mi-Bee-Studio/seeed-esp32s3-cam)** | ESP32-S3 监控相机固件：MJPEG 实时流、AVI 分段录像、自动上传 NAS · ESP32-S3 monitoring camera firmware built with ESP-IDF |
-| **[MiBeeP2PServer](https://github.com/Mi-Bee-Studio/MiBeeP2PServer)** | 自托管多租户 P2P 平台，STUN/TURN/WSS 信令 + Go Peer SDK · Self-hosted multi-tenant P2P platform with Go Peer SDK |
+| **[esp32-blackbox](https://github.com/Mi-Bee-Studio/esp32-blackbox)** | 网络探测设备，兼容 Prometheus Blackbox Exporter · Network probing device compatible with Prometheus blackbox_exporter, with JSON config & Web UI |
 
 ## 📞 联系我们 · Contact Us
 
 - 🌍 官网 · Website: <https://www.mlsbs.top/>
 - 📝 技术博客 · Blog: <https://blog.mickeyzzc.tech/>
-- 📧 邮箱 · Email: [mickey_zzc@126.com](mailto:mickey_zzc@126.com)
+- 📧 邮箱 · Email: [mickey_zzc@163.com](mailto:mickey_zzc@163.com)
 
 ---
 

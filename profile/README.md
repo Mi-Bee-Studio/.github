@@ -6,6 +6,9 @@
 专注**软件开发、AI 应用、物联网、云原生、可观测性与系统集成**，以全栈技术能力为企业与个人解决实际问题。
 We focus on **software development, AI applications, IoT, cloud-native, observability, and system integration** — solving real-world problems for businesses and individuals with full-stack engineering.
 
+🐝 **名字的由来**：**Mi** 取自创始人英文网名 **Mickeyzzc**，**Bee** 来自创始人爱人的网名 —— 两者的组合。
+🐝 **The name**: **Mi** comes from our founder's handle **Mickeyzzc**, and **Bee** from his wife's handle.
+
 ## 📌 核心能力 · Core Capabilities
 
 - **全栈开发与定制化软件服务** · Full-stack development & custom software services
@@ -30,7 +33,7 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 ### 嵌入式开发 · Embedded
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
-![RP2040](https://img.shields.io/badge/RP2040-A52720?style=flat&logo=raspberrypi&logoColor=white)
+![RP2040](https://img.shields.io/badge/RP2040-A52720?style=flat&logo=rasperrypi&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)
 ![MicroPython](https://img.shields.io/badge/MicroPython-2E86AB?style=flat&logo=micropython&logoColor=white)
 
@@ -61,11 +64,14 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 
 | 项目 · Project | 简介 · Description |
 | --- | --- |
-| **[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr)** ⭐96 | Go 轻量级 NVR，支持 RTSP / ONVIF / WebRTC / HLS / RTMP / SRT · Lightweight NVR in Go — modern embedded Web UI, single binary, zero dependencies |
+| **[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr)** | Go 轻量级 NVR，支持 RTSP / ONVIF / GB28181 / WebRTC / HLS / RTMP / SRT，浏览器端 AI 检测 · Lightweight self-hosted NVR in Go — single binary, zero dependencies, runs on low-power ARM |
 | **[MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward)** | 设备管理与监控系统，SNMP/ICMP/HTTP 探测 + Prometheus 指标 · Device management & monitoring — single-binary Go backend with embedded SvelteKit SPA |
 | **[MiBeeHive](https://github.com/Mi-Bee-Studio/MiBeeHive)** | 自托管运维工具供应链（APT / PyPI / WebDAV）· Self-hosted ops-tooling supply chain, no agent required |
-| **[seeed-esp32s3-cam](https://github.com/Mi-Bee-Studio/seeed-esp32s3-cam)** | ESP32-S3 监控相机固件：MJPEG 实时流、AVI 分段录像、自动上传 NAS · ESP32-S3 monitoring camera firmware built with ESP-IDF |
+| **[esp32s3-n16r8-cam](https://github.com/Mi-Bee-Studio/esp32s3-n16r8-cam)** | MiBee Cam 主力固件：OV3660 3MP + 人脸/移动/二维码 AI 检测、RTSP、ONVIF · Flagship MiBee Cam firmware: MJPEG streaming, face/motion/QR AI detection |
+| **[ai-thinker-esp32-cam](https://github.com/Mi-Bee-Studio/ai-thinker-esp32-cam) / [luatos-esp32s3-a10-camera](https://github.com/Mi-Bee-Studio/luatos-esp32s3-a10-camera) / [seeed-esp32s3-cam](https://github.com/Mi-Bee-Studio/seeed-esp32s3-cam)** | 多平台 ESP32 相机固件系列：MJPEG 实时流、移动侦测、OTA、NAS 自动上传 · Multi-board ESP32 camera firmware series — MJPEG streaming, motion detection, OTA & NAS upload |
+| **[mibee-eye-raspi](https://github.com/Mi-Bee-Studio/mibee-eye-raspi)** | 树莓派轻量级 Go ONVIF 相机服务（rpi-cam）· Lightweight Go ONVIF camera service for Raspberry Pi |
 | **[esp32-blackbox](https://github.com/Mi-Bee-Studio/esp32-blackbox)** | 网络探测设备，兼容 Prometheus Blackbox Exporter · Network probing device compatible with Prometheus blackbox_exporter, with JSON config & Web UI |
+| **[mibee-fingerprints-go](https://github.com/Mi-Bee-Studio/mibee-fingerprints-go)** | MiBee 指纹库参考引擎，服务身份识别 · Reference Go engine for the MiBee fingerprint corpus (service identity classification) |
 
 ## 📞 联系我们 · Contact Us
 

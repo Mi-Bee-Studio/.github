@@ -33,7 +33,7 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 ### 嵌入式开发 · Embedded
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
-![RP2040](https://img.shields.io/badge/RP2040-A52720?style=flat&logo=rasperrypi&logoColor=white)
+![RP2040](https://img.shields.io/badge/RP2040-A52720?style=flat&logo=raspberry-pi&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)
 ![MicroPython](https://img.shields.io/badge/MicroPython-2E86AB?style=flat&logo=micropython&logoColor=white)
 

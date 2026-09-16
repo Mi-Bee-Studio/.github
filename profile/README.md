@@ -75,9 +75,9 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 
 ## 📞 联系我们 · Contact Us
 
-- 🌍 官网 · Website: <https://www.mlsbs.top/>
+- 🌍 官网 · Website: <https://www.mickeyzzc.tech/>
 - 📝 技术博客 · Blog: <https://blog.mickeyzzc.tech/>
-- 📧 邮箱 · Email: [mickey_zzc@163.com](mailto:mickey_zzc@163.com)
+- 📧 邮箱 · Email: [mickey_zzc@mickeybee.cn](mailto:mickey_zzc@mickeybee.cn)
 
 ---
 

@@ -66,11 +66,10 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 | --- | --- |
 | **[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr)** | Go 轻量级 NVR，支持 RTSP / ONVIF / GB28181 / WebRTC / HLS / RTMP / SRT，浏览器端 AI 检测 · Lightweight self-hosted NVR in Go — single binary, zero dependencies, runs on low-power ARM |
 | **[MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward)** | 设备管理与监控系统，SNMP/ICMP/HTTP 探测 + Prometheus 指标 · Device management & monitoring — single-binary Go backend with embedded SvelteKit SPA |
-| **[MiBeeHive](https://github.com/Mi-Bee-Studio/MiBeeHive)** | 自托管运维工具供应链（APT / PyPI / WebDAV）· Self-hosted ops-tooling supply chain, no agent required |
-| **[esp32s3-n16r8-cam](https://github.com/Mi-Bee-Studio/esp32s3-n16r8-cam)** | MiBee Cam 主力固件：OV3660 3MP + 人脸/移动/二维码 AI 检测、RTSP、ONVIF · Flagship MiBee Cam firmware: MJPEG streaming, face/motion/QR AI detection |
+| **[esp32s3-n16r8](https://github.com/Mi-Bee-Studio/esp32s3-n16r8)** | MiBee Cam 主力固件：OV3660 3MP + 人脸/移动/二维码 AI 检测、RTSP、ONVIF · Flagship MiBee Cam firmware: MJPEG streaming, face/motion/QR AI detection |
 | **[ai-thinker-esp32-cam](https://github.com/Mi-Bee-Studio/ai-thinker-esp32-cam) / [luatos-esp32s3-a10-camera](https://github.com/Mi-Bee-Studio/luatos-esp32s3-a10-camera) / [seeed-esp32s3-cam](https://github.com/Mi-Bee-Studio/seeed-esp32s3-cam)** | 多平台 ESP32 相机固件系列：MJPEG 实时流、移动侦测、OTA、NAS 自动上传 · Multi-board ESP32 camera firmware series — MJPEG streaming, motion detection, OTA & NAS upload |
 | **[MiBee Eye 相机家族](https://github.com/xiqing85/mibee-eye-rs) · [mibee-eye-go](https://github.com/xiqing85/mibee-eye-go) · [mibee-eye-notebook](https://github.com/xiqing85/mibee-eye-notebook) · [mibee-eye-webui](https://github.com/xiqing85/mibee-eye-webui)** | 开源相机家族：把 Linux 板子/PC 变成 ONVIF/GB28181 摄像机，Rust/Go 双实现 + PC 采集 + 统一 WebUI（xiqing85 维护）· Open camera family: ONVIF/GB28181 cameras from any Linux board or PC |
-| **[esp32-blackbox](https://github.com/Mi-Bee-Studio/esp32-blackbox)** | 网络探测设备，兼容 Prometheus Blackbox Exporter · Network probing device compatible with Prometheus blackbox_exporter, with JSON config & Web UI |
+| **[wfp-device-sdk](https://github.com/mickeyzzc/wfp-device-sdk)（原 esp32-blackbox）** | 网络探测设备，兼容 Prometheus Blackbox Exporter · Network probing device compatible with Prometheus blackbox_exporter, with JSON config & Web UI (formerly esp32-blackbox, now under the mickeyzzc account) |
 | **[mibee-fingerprints-go](https://github.com/Mi-Bee-Studio/mibee-fingerprints-go)** | MiBee 指纹库参考引擎，服务身份识别 · Reference Go engine for the MiBee fingerprint corpus (service identity classification) |
 
 ## 📞 联系我们 · Contact Us

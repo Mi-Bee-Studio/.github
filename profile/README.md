@@ -12,16 +12,22 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 
 <div align="center">
   <a href="https://github.com/orgs/Mi-Bee-Studio/repositories?type=public" title="查看全部公开仓库">
-    <img src="product-matrix.svg" alt="Mi&amp;Bee Studio 产品矩阵依赖关系图：终端设备 → 协议库 → 平台服务三列主线，34 个公开仓库、19 条经核实的关系边；仅展示公开仓库">
+    <img src="product-matrix.svg" alt="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，16 个公开仓库、17 条关系边；MiBeeBell、MiBeeReach 为闭源产品，二进制经 mickeyzzc/releases 发布">
   </a>
 </div>
 
-**一张图看懂生态全景** · The whole ecosystem at a glance:
+- **核心主线** · 终端设备（ESP32 相机固件 / [MiBee Eye](https://github.com/xiqing85/mibee-eye-rs) 相机家族）→ 协议库（ONVIF · GB/T 28181，Go / Rust / C 三语言实现）→ 平台服务（[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr) / [MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward) / MiBeeBell / MiBeeReach）· *Devices → protocol libraries → platform, left to right.*
+- **关系边** · `dep` 代码依赖（逐条经 go.mod / Cargo.toml 核实，如 MiBeeNvr → onvif-go + gb28181-go）· `stream` 视频取流 · `events` 告警事件接入 MiBeeBell；专题视图另有 `lineage` 同源、`docs` 文档 · *Every edge is verified.*
+- **闭源产品** · 虚线绿框的 **MiBeeBell**（告警通知中心）与 **MiBeeReach**（远程接入平台）源码私有，二进制与功能介绍在 [mickeyzzc/releases](https://github.com/mickeyzzc/releases) 发布 · *Closed-source products ship binaries via the releases hub.*
+- **专题视图** · 与主线无直接依赖的仓库按领域拆到下面三张图；不再维护的旧仓库不入图 · *Unrelated clusters live in their own views; unmaintained repos are left out.*
 
-- **三列主线** · 终端设备（ESP32 相机固件 / [MiBee Eye](https://github.com/xiqing85/mibee-eye-rs) 相机家族）→ 协议库（ONVIF · GB/T 28181，Go / Rust / C 三语言实现）→ 平台服务（[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr) / [MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward)）· *Devices → protocol libraries → platform, left to right.*
-- **四种关系边** · `dep` 代码依赖（逐条经 go.mod / Cargo.toml 核实，如 MiBeeNvr → onvif-go + gb28181-go）· `stream` 视频取流（RTSP · ONVIF · GB28181）· `docs` 文档与门户 · `lineage` 同源派生.
-- **仅公开仓库** · Public-only：图中收录 3 个账号共 **34** 个公开仓库（含 [@xiqing85](https://github.com/xiqing85) 的 MiBee Eye 家族与 [@mickeyzzc](https://github.com/mickeyzzc) 的协议库），私有仓库一律不出现.
-- 图中为空间所用的简称均可通过下方精选项目表或[组织公开仓库列表](https://github.com/orgs/Mi-Bee-Studio/repositories?type=public)直达原仓库.
+### 🔍 专题视图 · Domain Views
+
+<p align="center"><img src="product-matrix-observability.svg" alt="专题视图 · 可观测：security-collector-exporter 与 stream-metrics-route，两个 Prometheus 生态仓库"></p>
+<p align="center"><img src="product-matrix-boards-edge.svg" alt="专题视图 · 开发板与边缘：8 块开发板实验仓库，加 serialtap 与 wfp-device-sdk 两个边缘工具"></p>
+<p align="center"><img src="product-matrix-docs-portals.svg" alt="专题视图 · 文档与门户：组织主页、mibee-docs、MiBee Eye 门户、技术博客与 Hugo 主题"></p>
+
+图中简称均可通过下方精选项目表或[组织公开仓库列表](https://github.com/orgs/Mi-Bee-Studio/repositories?type=public)直达原仓库 · *Every chip maps to a repository below.*
 
 ## ⭐ 精选项目 · Featured Projects
 
@@ -29,6 +35,8 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 | --- | --- |
 | **[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr)** | Go 轻量级 NVR，支持 RTSP / ONVIF / GB28181 / WebRTC / HLS / RTMP / SRT，浏览器端 AI 检测 · Lightweight self-hosted NVR in Go — single binary, zero dependencies, runs on low-power ARM |
 | **[MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward)** | 设备管理与监控系统，SNMP/ICMP/HTTP 探测 + Prometheus 指标 · Device management & monitoring — single-binary Go backend with embedded SvelteKit SPA |
+| **[MiBeeBell 蜂铃](https://github.com/mickeyzzc/releases/tree/main/products/mibeebell)** 🔒 | 轻量自托管告警通知中心：七类摄取入口，去抖 / 冷却 / 升级 / 静默管道，国内外多渠道，mesh 高可用（源码私有，二进制经 releases 发布）· Lightweight self-hosted alert hub — ingest, denoise, deliver; binaries via the releases hub |
+| **[MiBeeReach](https://github.com/mickeyzzc/releases/tree/main/products/mibeereach)** 🔒 | 自部署、隐私可控的统一远程接入：远程桌面 / 终端 / SSH / 内网隧道（专有软件，二进制经 releases 发布）· Self-hosted, privacy-first remote access — proprietary, binaries via the releases hub |
 | **协议库家族 · Protocol Libraries**<br>[gb28181-go](https://github.com/mickeyzzc/gb28181-go) · [gb28181-rs](https://github.com/mickeyzzc/gb28181-rs) · [onvif-go](https://github.com/mickeyzzc/onvif-go) · [onvif-rs](https://github.com/mickeyzzc/onvif-rs) · [onvif-c](https://github.com/mickeyzzc/onvif-c) | GB/T 28181 与 ONVIF 协议库（Go / Rust / C）：MiBeeNvr 与 MiBee Eye 共同的协议底座 · The protocol foundation beneath MiBeeNvr & MiBee Eye |
 | **[esp32s3-n16r8](https://github.com/Mi-Bee-Studio/esp32s3-n16r8)** | MiBee Cam 主力固件：OV3660 3MP + 人脸/移动/二维码 AI 检测、RTSP、ONVIF · Flagship MiBee Cam firmware: MJPEG streaming, face/motion/QR AI detection |
 | **[ai-thinker-esp32-cam](https://github.com/Mi-Bee-Studio/ai-thinker-esp32-cam) / [luatos-esp32s3-a10-camera](https://github.com/Mi-Bee-Studio/luatos-esp32s3-a10-camera) / [seeed-esp32s3-cam](https://github.com/Mi-Bee-Studio/seeed-esp32s3-cam)** | 多平台 ESP32 相机固件系列：MJPEG 实时流、移动侦测、OTA、NAS 自动上传 · Multi-board ESP32 camera firmware series — MJPEG streaming, motion detection, OTA & NAS upload |

@@ -1,0 +1,128 @@
+<svg class="tm" width="980" height="430" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mi&amp;Bee Studio 专题视图 · 可观测：security-collector-exporter 与 stream-metrics-route，两个 Prometheus 生态公开仓库">
+      <style>
+        .tm{font-family:'Cascadia Code','JetBrains Mono',Consolas,Menlo,'Courier New',monospace;
+          --bg:#0b0f16;--panel:#10161f;--edgest:#26313f;--fg:#e6edf3;--dim:#7d8b99;--frame:#1f2733;
+          --cy:#22d3ee;--grn:#3fb950;--amb:#fbbf24;--vio:#c792ea}
+        .win{fill:var(--bg);stroke:var(--frame);stroke-width:1}
+        .t-title{font-size:12px;fill:var(--dim)}
+        .t-badge{font-size:10.5px;fill:var(--grn);letter-spacing:.5px}
+        .cmd{font-size:13px;fill:var(--fg)}
+        .pr{fill:var(--grn);font-weight:700}
+        .flag{fill:var(--cy)}
+        .t-status{font-size:12px;fill:var(--dim)}
+        .t-ok{fill:var(--grn)}
+        .leg{font-size:11.5px;fill:#8b98a5}
+        .col-label{font-size:11px;fill:#5b8c6a}
+        .lbl-note{font-size:11px;fill:var(--dim)}
+        .chip .box{fill:var(--panel);stroke:var(--edgest);stroke-width:1}
+        .chip .nm{font-size:12.5px;fill:var(--fg)}
+        .chip .lg{font-size:11px;font-weight:700}
+        .own.mz{fill:var(--vio)}
+        .f-line{font-size:12px;fill:#8b98a5}
+        .f-sum{fill:var(--fg);font-weight:700}
+        .sep{stroke:var(--frame);stroke-width:1}
+        .sep-d{stroke:var(--frame);stroke-dasharray:2 6}
+        .l-go{fill:#00ADD8}
+        .e-lbl{font-size:10.5px;fill:var(--dim)}
+        @keyframes lnIn{from{opacity:0}to{opacity:1}}
+        .ln{animation:lnIn .3s both;animation-delay:var(--d,0s)}
+        @keyframes chipIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+        .chip{animation:chipIn .4s cubic-bezier(.2,.7,.3,1) both;animation-delay:var(--d,0s)}
+        @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+        .cur{fill:var(--fg);animation:blink 1.1s steps(1) infinite}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .refresh{fill:var(--grn);transform-box:fill-box;transform-origin:center;animation:spin 7s linear infinite}
+        @keyframes drift{to{transform:translateY(4px)}}
+        .scan{animation:drift 8s linear infinite}
+        @keyframes gl{0%,90%,100%{opacity:0;transform:none}91%{opacity:.8;transform:translate(-2px,1px)}93%{opacity:.55;transform:translate(2px,-1px)}95%{opacity:0;transform:none}}
+        .g1{fill:var(--cy);opacity:0;animation:gl 7s infinite}
+        .g2{fill:#ff5874;opacity:0;animation:gl 7s .08s infinite}
+        @keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+        .bar{fill:var(--cy);opacity:.28;transform-box:fill-box;transform-origin:50% 100%;animation:eq 1.4s ease-in-out infinite alternate;animation-delay:var(--d,0s)}
+        .bar.v{fill:var(--vio)}
+        @media (prefers-reduced-motion:reduce){.ln,.chip,.cur,.refresh,.scan,.g1,.g2,.bar{animation:none}}
+      </style>
+
+      <defs>
+        <pattern id="gridp" width="26" height="26" patternUnits="userSpaceOnUse">
+          <circle cx="13" cy="13" r="1" fill="#22d3ee" opacity=".05"/>
+        </pattern>
+        <pattern id="scanp" width="4" height="4" patternUnits="userSpaceOnUse">
+          <rect width="4" height="1" fill="#8be9fd" opacity=".035"/>
+        </pattern>
+      </defs>
+
+      <rect class="win" x="1" y="1" width="978" height="428" rx="14"/>
+      <rect x="1" y="40" width="978" height="388" fill="url(#gridp)"/>
+
+      <!-- title bar -->
+      <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
+      <circle cx="46" cy="20" r="5.5" fill="#ffbd2e"/>
+      <circle cx="66" cy="20" r="5.5" fill="#27c93f"/>
+      <text class="t-title g1" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix/observability — zsh</text>
+      <text class="t-title g2" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix/observability — zsh</text>
+      <text class="t-title" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix/observability — zsh</text>
+      <rect x="836" y="10" width="122" height="20" rx="10" fill="#0f1e14" stroke="#238636" stroke-width="1"/>
+      <text class="t-badge" x="897" y="23.5" text-anchor="middle">● DOMAIN VIEW</text>
+      <line class="sep" x1="1" y1="40" x2="979" y2="40"/>
+
+      <!-- boot lines -->
+      <text class="ln cmd" style="--d:.1s" x="28" y="72"><tspan class="pr">❯</tspan> bee graph --users mickeyzzc <tspan class="flag">--domain observability</tspan></text>
+      <rect class="cur" x="480" y="61" width="8" height="14"/>
+      <text class="ln t-status" style="--d:.35s" x="28" y="96"><tspan class="t-ok">✓</tspan> resolved: 2 public repos · Prometheus ecosystem · no direct code edges</text>
+      <g class="ln" style="--d:.55s">
+        <text class="leg" x="28" y="118">grouped by domain · 按领域聚合</text>
+        <text class="leg" x="956" y="118" text-anchor="end"><tspan fill="#c792ea">●</tspan> mickeyzzc ×2</text>
+      </g>
+      <line class="sep-d" x1="24" y1="150" x2="956" y2="150"/>
+
+      <!-- ===== domain band ===== -->
+      <text class="ln col-label" style="--d:.8s" x="60" y="174">// observability · @mickeyzzc</text>
+      <rect class="ln" style="--d:.85s" x="60" y="186" width="860" height="128" rx="12" fill="none" stroke="#26313f" stroke-dasharray="3 6"/>
+      <text class="ln lbl-note" style="--d:.9s" x="904" y="204" text-anchor="end">prometheus ecosystem</text>
+
+      <line class="ln sep-d" style="--d:1.4s" x1="400" y1="231" x2="580" y2="231"/>
+      <text class="ln e-lbl" style="--d:1.4s" x="490" y="224" text-anchor="middle">same domain</text>
+
+      <g transform="translate(96,214)"><g class="chip" style="--d:1.0s"><rect class="box" width="300" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-go" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5">security-collector-exporter</text></g></g>
+      <g transform="translate(584,214)"><g class="chip" style="--d:1.1s"><rect class="box" width="300" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-go" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5">stream-metrics-route</text></g></g>
+
+      <text class="ln lbl-note" style="--d:1.25s" x="100" y="272">Linux 安全态势采集 → Prometheus 指标</text>
+      <text class="ln lbl-note" style="--d:1.3s" x="100" y="292">等保合规监控 · 金融企业生产验证</text>
+      <text class="ln lbl-note" style="--d:1.25s" x="588" y="272">高性能指标路由网关 · 双 Hashmod 调度</text>
+      <text class="ln lbl-note" style="--d:1.3s" x="588" y="292">Remote Write · Kafka · 熔断 · relabel</text>
+
+      <!-- metrics pulse (decorative) -->
+      <g class="ln" style="--d:1.5s">
+        <rect class="bar" style="--d:-.1s" x="86" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar v" style="--d:-.7s" x="124" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-1.1s" x="162" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.4s" x="200" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar v" style="--d:-1.3s" x="238" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.2s" x="276" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.9s" x="314" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar v" style="--d:-.5s" x="352" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-1.2s" x="390" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.3s" x="428" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar v" style="--d:-1.0s" x="466" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.6s" x="504" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-1.4s" x="542" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar v" style="--d:-.15s" x="580" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.8s" x="618" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-1.25s" x="656" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar v" style="--d:-.45s" x="694" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-1.05s" x="732" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.25s" x="770" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar v" style="--d:-.95s" x="808" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-.55s" x="846" y="326" width="20" height="26" rx="2"/>
+        <rect class="bar" style="--d:-1.35s" x="884" y="326" width="20" height="26" rx="2"/>
+      </g>
+
+      <!-- footer -->
+      <line class="sep-d" x1="24" y1="370" x2="956" y2="370"/>
+      <text class="ln f-line" style="--d:1.8s" x="28" y="394"><tspan class="t-ok">Σ</tspan> <tspan class="f-sum">2 public repos · 0 code edges</tspan> · domain: observability</text>
+      <text class="ln f-line" style="--d:1.8s" x="956" y="394" text-anchor="end"><tspan class="refresh">↻</tspan> synced 2026-11-02</text>
+      <text class="ln f-line" style="--d:1.9s" x="28" y="416"><tspan class="pr">❯</tspan> <tspan class="cur-box">█</tspan></text>
+
+      <rect class="scan" x="1" y="40" width="978" height="388" fill="url(#scanp)" pointer-events="none"/>
+    </svg>

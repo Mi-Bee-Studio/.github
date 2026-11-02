@@ -1,8 +1,8 @@
-<svg class="tm" width="980" height="904" viewBox="0 0 980 904" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Mi&amp;Bee Studio 公开仓库依赖关系图：34 个公开仓库分三列（终端设备、协议库、平台服务）加开发板、运维工具、文档门户三组，16 条已核实的关系边；私有仓库已排除">
+<svg class="tm" width="980" height="660" viewBox="0 0 980 660" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，16 个公开仓库、17 条关系边；MiBeeBell 与 MiBeeReach 为闭源产品，二进制经 mickeyzzc/releases 发布">
       <style>
         .tm{font-family:'Cascadia Code','JetBrains Mono',Consolas,Menlo,'Courier New',monospace;
           --bg:#0b0f16;--panel:#10161f;--edgest:#26313f;--fg:#e6edf3;--dim:#7d8b99;--frame:#1f2733;
-          --cy:#22d3ee;--grn:#3fb950;--amb:#fbbf24;--vio:#c792ea}
+          --cy:#22d3ee;--grn:#3fb950;--amb:#fbbf24;--vio:#c792ea;--blu:#58a6ff}
         .win{fill:var(--bg);stroke:var(--frame);stroke-width:1}
         .t-title{font-size:12px;fill:var(--dim)}
         .t-badge{font-size:10.5px;fill:var(--grn);letter-spacing:.5px}
@@ -13,29 +13,26 @@
         .t-ok{fill:var(--grn)}
         .leg{font-size:11.5px;fill:#8b98a5}
         .col-label{font-size:11px;fill:#5b8c6a}
-        .lbl-note{font-size:10px;fill:var(--dim)}
         .chip .box{fill:var(--panel);stroke:var(--edgest);stroke-width:1}
         .chip .nm{font-size:12.5px;fill:var(--fg)}
-        .chip .nm2{font-size:12px;fill:var(--fg)}
         .chip .lg{font-size:11px;font-weight:700}
-        .own.org{fill:var(--amb)}.own.xq{fill:var(--cy)}.own.mz{fill:var(--vio)}
+        .own.org{fill:var(--amb)}.own.xq{fill:var(--cy)}.own.mz{fill:var(--vio)}.own.rel{fill:var(--grn)}
+        .chip.rel .box{stroke:var(--grn);stroke-width:1.2;stroke-dasharray:5 3}
+        .tag-rel{font-size:9.5px;fill:var(--grn);letter-spacing:.3px}
         .f-line{font-size:12px;fill:#8b98a5}
         .f-sum{fill:var(--fg);font-weight:700}
         .sep{stroke:var(--frame);stroke-width:1}
         .sep-d{stroke:var(--frame);stroke-dasharray:2 6}
-        .l-go{fill:#00ADD8}.l-rust{fill:#dea584}.l-c{fill:#94a3b8}.l-cpp{fill:#f472b6}
-        .l-js{fill:#fde047}.l-shell{fill:#a3e635}.l-py{fill:#60a5fa}
-        .l-html{fill:#fb923c}.l-css{fill:#c084fc}.l-cmake{fill:#f87171}
-        .pkt-a{fill:var(--amb)}.pkt-c{fill:var(--cy)}
-        .halo-a{fill:var(--amb);opacity:.22}.halo-c{fill:var(--cy);opacity:.22}
+        .l-go{fill:#00ADD8}.l-rust{fill:#dea584}.l-c{fill:#94a3b8}.l-cpp{fill:#f472b6}.l-js{fill:#fde047}
+        .pkt-a{fill:var(--amb)}.pkt-c{fill:var(--cy)}.pkt-b{fill:var(--blu)}
+        .halo-a{fill:var(--amb);opacity:.22}.halo-c{fill:var(--cy);opacity:.22}.halo-b{fill:var(--blu);opacity:.22}
         .edge{fill:none}
         .edge-dep{stroke:var(--cy);stroke-width:1.5;opacity:.85}
         .edge-thin{stroke-width:1.2}
         .edge-stream{stroke:var(--amb);stroke-width:2;stroke-dasharray:7 5;opacity:.9}
-        .edge-docs{stroke:var(--vio);stroke-width:1.5;stroke-dasharray:4 5;opacity:.85}
-        .edge-lin{stroke:var(--grn);stroke-width:1.5;stroke-dasharray:4 5;opacity:.85}
+        .edge-evt{stroke:var(--blu);stroke-width:1.5;stroke-dasharray:6 4;opacity:.9}
         .e-lbl{font-size:10.5px;fill:var(--dim)}
-        .e-lbl-a{fill:#b9880f}
+        .e-lbl-a{fill:#b9880f}.e-lbl-b{fill:#5d8fcf}
         @keyframes lnIn{from{opacity:0}to{opacity:1}}
         .ln{animation:lnIn .3s both;animation-delay:var(--d,0s)}
         @keyframes fadeD{from{opacity:0}to{opacity:.87}}
@@ -72,40 +69,40 @@
         </filter>
         <marker id="mcy" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#22d3ee"/></marker>
         <marker id="mam" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#fbbf24"/></marker>
-        <marker id="mvio" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#c792ea"/></marker>
-        <marker id="mgrn" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#3fb950"/></marker>
+        <marker id="mblu" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#58a6ff"/></marker>
         <path id="mediaPath" d="M246,347 C 430,600 650,600 833,216" fill="none"/>
         <path id="pNvrPath" d="M616,371 C 670,330 700,240 738,199" fill="none"/>
+        <path id="evtPath" d="M752,214 C 700,250 690,380 738,418" fill="none"/>
       </defs>
 
-      <rect class="win" x="1" y="1" width="978" height="902" rx="14"/>
-      <rect x="1" y="40" width="978" height="862" fill="url(#gridp)"/>
+      <rect class="win" x="1" y="1" width="978" height="658" rx="14"/>
+      <rect x="1" y="40" width="978" height="618" fill="url(#gridp)"/>
 
       <!-- title bar -->
       <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
       <circle cx="46" cy="20" r="5.5" fill="#ffbd2e"/>
       <circle cx="66" cy="20" r="5.5" fill="#27c93f"/>
-      <text class="t-title g1" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix — zsh</text>
-      <text class="t-title g2" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix — zsh</text>
-      <text class="t-title" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix — zsh</text>
+      <text class="t-title g1" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix/core — zsh</text>
+      <text class="t-title g2" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix/core — zsh</text>
+      <text class="t-title" x="490" y="24.5" text-anchor="middle">bee@hive:~/product-matrix/core — zsh</text>
       <rect x="836" y="10" width="122" height="20" rx="10" fill="#0f1e14" stroke="#238636" stroke-width="1"/>
-      <text class="t-badge" x="897" y="23.5" text-anchor="middle">● PUBLIC ONLY</text>
+      <text class="t-badge" x="897" y="23.5" text-anchor="middle">● CORE MATRIX</text>
       <line class="sep" x1="1" y1="40" x2="979" y2="40"/>
 
       <!-- boot lines -->
-      <text class="ln cmd" style="--d:.1s" x="28" y="72"><tspan class="pr">❯</tspan> bee graph --org Mi-Bee-Studio --users xiqing85,mickeyzzc --deps <tspan class="flag">--public-only</tspan></text>
-      <rect class="cur" x="710" y="61" width="8" height="14"/>
-      <text class="ln t-status" style="--d:.35s" x="28" y="96"><tspan class="t-ok">✓</tspan> resolved: 34 public repos · 19 verified relation edges · 0 private exposed</text>
+      <text class="ln cmd" style="--d:.1s" x="28" y="72"><tspan class="pr">❯</tspan> bee graph --org Mi-Bee-Studio --users xiqing85,mickeyzzc <tspan class="flag">--view core --featured bell,reach</tspan></text>
+      <rect class="cur" x="824" y="61" width="8" height="14"/>
+      <text class="ln t-status" style="--d:.35s" x="28" y="96"><tspan class="t-ok">✓</tspan> resolved: 16 public repos · 17 relation edges · 2 featured closed-source products</text>
       <g class="ln" style="--d:.55s">
         <line x1="28" y1="114.5" x2="52" y2="114.5" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#mcy)"/>
         <text class="leg" x="60" y="118">dep 依赖</text>
         <line x1="150" y1="114.5" x2="174" y2="114.5" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#mam)"/>
         <text class="leg" x="182" y="118">stream 取流</text>
-        <line x1="292" y1="114.5" x2="316" y2="114.5" stroke="#c792ea" stroke-width="1.5" stroke-dasharray="3 4" marker-end="url(#mvio)"/>
-        <text class="leg" x="324" y="118">docs 文档</text>
-        <line x1="424" y1="114.5" x2="448" y2="114.5" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="3 4" marker-end="url(#mgrn)"/>
-        <text class="leg" x="456" y="118">lineage 同源</text>
-        <text class="leg" x="956" y="118" text-anchor="end"><tspan fill="#fbbf24">●</tspan> org ×17&#160;&#160;<tspan fill="#22d3ee">●</tspan> xiqing85 ×5&#160;&#160;<tspan fill="#c792ea">●</tspan> mickeyzzc ×12</text>
+        <line x1="292" y1="114.5" x2="316" y2="114.5" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#mblu)"/>
+        <text class="leg" x="324" y="118">events 告警事件</text>
+        <rect x="448" y="108" width="22" height="13" rx="3" fill="#10161f" stroke="#3fb950" stroke-width="1.2" stroke-dasharray="4 2"/>
+        <text class="leg" x="478" y="118">closed-source · via releases</text>
+        <text class="leg" x="956" y="118" text-anchor="end"><tspan fill="#fbbf24">●</tspan> org ×7&#160;&#160;<tspan fill="#22d3ee">●</tspan> xiqing85 ×4&#160;&#160;<tspan fill="#c792ea">●</tspan> mickeyzzc ×5</text>
       </g>
       <line class="sep-d" x1="24" y1="150" x2="956" y2="150"/>
 
@@ -129,7 +126,7 @@
       <path class="edge edge-dep edge-thin draw" style="--d:2.52s" pathLength="1" d="M246,509 C 300,505 300,475 252,469" marker-end="url(#mcy)"/>
       <path class="edge edge-dep edge-thin draw" style="--d:2.55s" pathLength="1" d="M246,509 C 315,498 315,435 252,425" marker-end="url(#mcy)"/>
       <path class="edge edge-dep edge-thin draw" style="--d:2.58s" pathLength="1" d="M246,509 C 330,492 330,388 252,381" marker-end="url(#mcy)"/>
-      <!-- dep: protocol libs -> MiBeeNvr (go.mod: gb28181-go v0.13.0, onvif-go/v2 v2.5.0) -->
+      <!-- dep: protocol libs -> MiBeeNvr (go.mod: gb28181-go, onvif-go/v2) -->
       <path class="edge edge-dep draw" style="--d:2.62s" pathLength="1" d="M616,371 C 670,330 700,240 736,201" marker-end="url(#mcy)"/>
       <path class="edge edge-dep draw" style="--d:2.66s" pathLength="1" d="M616,327 C 675,290 705,235 736,203" marker-end="url(#mcy)"/>
       <!-- dep: fingerprints-go implements MiBeeSteward spec -->
@@ -138,16 +135,12 @@
 
       <!-- stream: devices -> MiBeeNvr -->
       <path class="edge edge-stream fade" style="--d:2.75s" d="M246,347 C 430,600 650,600 833,218" marker-end="url(#mam)"/>
-      <text class="ln e-lbl e-lbl-a" style="--d:2.75s" x="540" y="592" text-anchor="middle">RTSP · ONVIF · GB28181 视频流</text>
+      <text class="ln e-lbl e-lbl-a" style="--d:2.75s" x="540" y="566" text-anchor="middle">RTSP · ONVIF · GB28181 视频流</text>
 
-      <!-- docs / portal -->
-      <path class="edge edge-docs fade" style="--d:2.8s" d="M250,810 C 90,834 36,700 36,540 C 36,516 48,509 56,509" marker-end="url(#mvio)"/>
-      <path class="edge edge-docs fade" style="--d:2.84s" d="M840,776 C 952,700 952,430 934,300" marker-end="url(#mvio)"/>
-      <path class="edge edge-docs fade" style="--d:2.88s" d="M496,776 C 520,756 640,756 660,772" marker-end="url(#mvio)"/>
-
-      <!-- lineage: wfp-device-sdk <- blackbox (luatos-esp32c3) -->
-      <path class="edge edge-lin fade" style="--d:2.92s" d="M806,731 C 758,750 680,742 640,691" marker-end="url(#mgrn)"/>
-      <text class="ln e-lbl" style="--d:2.92s" x="716" y="762">同源</text>
+      <!-- events: MiBeeNvr / MiBeeSteward -> MiBeeBell -->
+      <path class="edge edge-evt fade" style="--d:2.82s" d="M752,214 C 700,250 690,380 736,418" marker-end="url(#mblu)"/>
+      <path class="edge edge-evt fade" style="--d:2.86s" d="M752,314 C 712,340 708,400 736,428" marker-end="url(#mblu)"/>
+      <text class="ln e-lbl e-lbl-b" style="--d:2.86s" x="698" y="344" text-anchor="end">events</text>
 
       <!-- ===== col A: devices ===== -->
       <g transform="translate(60,178)"><g class="chip" style="--d:.9s"><rect class="box" width="186" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-cpp" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5">seeed-esp32s3-cam</text></g></g>
@@ -171,33 +164,9 @@
       <g transform="translate(740,178)"><g class="chip hero" style="--d:1.55s"><rect class="hero-glow" x="-3" y="-3" width="196" height="40" rx="9"/><rect class="box" width="190" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-go" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5" font-weight="700">MiBeeNvr</text></g></g>
       <g transform="translate(740,278)"><g class="chip" style="--d:1.6s"><rect class="box" width="190" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-go" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5">MiBeeSteward</text></g></g>
       <g transform="translate(740,332)"><g class="chip" style="--d:1.65s"><rect class="box" width="190" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-go" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5">mibee-fingerprints-go</text></g></g>
-
-      <!-- ===== bottom: board labs ===== -->
-      <text class="ln col-label" style="--d:1.7s" x="60" y="620">// board labs · org ×8</text>
-      <g transform="translate(60,626)"><g class="chip" style="--d:1.7s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">esp32-c3-mini</text></g></g>
-      <g transform="translate(206,626)"><g class="chip" style="--d:1.72s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">esp32-s2-mini</text></g></g>
-      <g transform="translate(352,626)"><g class="chip" style="--d:1.74s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">esp32-s3-zero</text></g></g>
-      <g transform="translate(498,626)"><g class="chip" style="--d:1.76s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">luatos-esp32c3</text></g></g>
-      <g transform="translate(60,670)"><g class="chip" style="--d:1.78s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">rp2040-zero</text></g></g>
-      <g transform="translate(206,670)"><g class="chip" style="--d:1.8s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">xiao-esp32c5</text></g></g>
-      <g transform="translate(352,670)"><g class="chip" style="--d:1.82s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">xiao-esp32c6</text></g></g>
-      <g transform="translate(498,670)"><g class="chip" style="--d:1.84s"><rect class="box" width="138" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-cmake" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">xiao-rp2350</text></g></g>
-
-      <!-- ===== bottom: ops tooling ===== -->
-      <text class="ln col-label" style="--d:1.86s" x="664" y="620">// ops tooling · @mickeyzzc</text>
-      <g transform="translate(664,626)"><g class="chip" style="--d:1.9s"><rect class="box" width="136" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-go" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">serialtap</text></g></g>
-      <g transform="translate(808,626)"><g class="chip" style="--d:1.92s"><rect class="box" width="136" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-go" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">stream-metrics</text></g></g>
-      <g transform="translate(664,670)"><g class="chip" style="--d:1.94s"><rect class="box" width="280" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-go" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">security-collector-exporter</text></g></g>
-      <g transform="translate(664,714)"><g class="chip" style="--d:1.96s"><rect class="box" width="136" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-shell" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">MLSBS</text></g></g>
-      <g transform="translate(808,714)"><g class="chip" style="--d:1.98s"><rect class="box" width="136" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-c" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">wfp-device-sdk</text></g></g>
-
-      <!-- ===== bottom: docs & portals ===== -->
-      <text class="ln col-label" style="--d:2.0s" x="60" y="760">// docs &amp; portals</text>
-      <g transform="translate(60,776)"><g class="chip" style="--d:2.05s"><rect class="box" width="168" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-html" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">org-pages</text></g></g>
-      <g transform="translate(236,776)"><g class="chip" style="--d:2.08s"><rect class="box" width="168" height="34" rx="7"/><rect class="own xq" width="3" height="34" rx="1.5"/><text class="lg l-html" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">eye-portal</text></g></g>
-      <g transform="translate(412,776)"><g class="chip" style="--d:2.11s"><rect class="box" width="168" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-html" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">mickeyzzc-blog</text></g></g>
-      <g transform="translate(588,776)"><g class="chip" style="--d:2.14s"><rect class="box" width="168" height="34" rx="7"/><rect class="own mz" width="3" height="34" rx="1.5"/><text class="lg l-css" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">hugo-themes-zhi</text></g></g>
-      <g transform="translate(756,776)"><g class="chip" style="--d:2.17s"><rect class="box" width="168" height="34" rx="7"/><rect class="own org" width="3" height="34" rx="1.5"/><text class="lg l-py" x="12" y="22.5">▸</text><text class="nm2" x="24" y="22.5">mibee-docs</text></g></g>
+      <text class="ln col-label" style="--d:1.68s" x="740" y="396">// closed · via releases</text>
+      <g transform="translate(740,406)"><g class="chip rel" style="--d:1.72s"><rect class="box" width="190" height="34" rx="7"/><rect class="own rel" width="3" height="34" rx="1.5"/><text class="lg l-go" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5" font-weight="700">MiBeeBell</text><text class="tag-rel" x="182" y="22" text-anchor="end">releases ↗</text></g></g>
+      <g transform="translate(740,460)"><g class="chip rel" style="--d:1.78s"><rect class="box" width="190" height="34" rx="7"/><rect class="own rel" width="3" height="34" rx="1.5"/><text class="lg l-rust" x="14" y="22.5">▸</text><text class="nm" x="27" y="22.5" font-weight="700">MiBeeReach</text><text class="tag-rel" x="182" y="22" text-anchor="end">releases ↗</text></g></g>
 
       <!-- data packets -->
       <g filter="url(#glowA)"><g><circle class="halo-a" r="6"/><circle class="pkt-a" r="2.5"/><animateMotion begin="2.9s" dur="7s" repeatCount="indefinite"><mpath xlink:href="#mediaPath" href="#mediaPath"/></animateMotion></g></g>
@@ -205,12 +174,13 @@
       <g filter="url(#glowA)"><g><circle class="halo-a" r="6"/><circle class="pkt-a" r="2.5"/><animateMotion begin="7.5s" dur="7s" repeatCount="indefinite"><mpath xlink:href="#mediaPath" href="#mediaPath"/></animateMotion></g></g>
       <g filter="url(#glowA)"><g><circle class="halo-c" r="5"/><circle class="pkt-c" r="2"/><animateMotion begin="3.2s" dur="5s" repeatCount="indefinite"><mpath xlink:href="#pNvrPath" href="#pNvrPath"/></animateMotion></g></g>
       <g filter="url(#glowA)"><g><circle class="halo-c" r="5"/><circle class="pkt-c" r="2"/><animateMotion begin="5.7s" dur="5s" repeatCount="indefinite"><mpath xlink:href="#pNvrPath" href="#pNvrPath"/></animateMotion></g></g>
+      <g filter="url(#glowA)"><g><circle class="halo-b" r="5"/><circle class="pkt-b" r="2"/><animateMotion begin="3.6s" dur="4.5s" repeatCount="indefinite"><mpath xlink:href="#evtPath" href="#evtPath"/></animateMotion></g></g>
 
       <!-- footer -->
-      <line class="sep-d" x1="24" y1="844" x2="956" y2="844"/>
-      <text class="ln f-line" style="--d:2.98s" x="28" y="866"><tspan class="t-ok">Σ</tspan> <tspan class="f-sum">34 public repos · 19 relation edges</tspan> · private: excluded by design</text>
-      <text class="ln f-line" style="--d:2.98s" x="956" y="866" text-anchor="end"><tspan class="refresh">↻</tspan> GitHub Action · weekly sync · 2026-10-19</text>
-      <text class="ln f-line" style="--d:3.1s" x="28" y="888"><tspan class="pr">❯</tspan> <tspan class="cur-box">█</tspan></text>
+      <line class="sep-d" x1="24" y1="596" x2="956" y2="596"/>
+      <text class="ln f-line" style="--d:2.98s" x="28" y="620"><tspan class="t-ok">Σ</tspan> <tspan class="f-sum">16 public repos · 17 relation edges</tspan> · featured: MiBeeBell, MiBeeReach → mickeyzzc/releases</text>
+      <text class="ln f-line" style="--d:2.98s" x="956" y="620" text-anchor="end"><tspan class="refresh">↻</tspan> synced 2026-11-02</text>
+      <text class="ln f-line" style="--d:3.1s" x="28" y="642"><tspan class="pr">❯</tspan> <tspan class="cur-box">█</tspan></text>
 
-      <rect class="scan" x="1" y="40" width="978" height="862" fill="url(#scanp)" pointer-events="none"/>
+      <rect class="scan" x="1" y="40" width="978" height="618" fill="url(#scanp)" pointer-events="none"/>
     </svg>

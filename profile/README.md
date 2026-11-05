@@ -12,13 +12,13 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 
 <div align="center">
   <a href="https://github.com/orgs/Mi-Bee-Studio/repositories?type=public" title="查看全部公开仓库">
-    <img src="product-matrix.svg" alt="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，16 个公开仓库、17 条关系边；MiBeeBell、MiBeeReach 为闭源产品，二进制经 mickeyzzc/releases 发布">
+    <img src="product-matrix.svg" alt="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，16 个公开仓库、17 条关系边；MiBeeBell、MiBeeReach、MiBeeHive 为闭源产品（前两者经 mickeyzzc/releases 发布）">
   </a>
 </div>
 
-- **核心主线** · 终端设备（ESP32 相机固件 / [MiBee Eye](https://github.com/xiqing85/mibee-eye-rs) 相机家族）→ 协议库（ONVIF · GB/T 28181，Go / Rust / C 三语言实现）→ 平台服务（[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr) / [MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward) / MiBeeBell / MiBeeReach）· *Devices → protocol libraries → platform, left to right.*
+- **核心主线** · 终端设备（ESP32 相机固件 / [MiBee Eye](https://github.com/xiqing85/mibee-eye-rs) 相机家族）→ 协议库（ONVIF · GB/T 28181，Go / Rust / C 三语言实现）→ 平台服务（[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr) / [MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward) / MiBeeBell / MiBeeReach / MiBeeHive）· *Devices → protocol libraries → platform, left to right.*
 - **关系边** · `dep` 代码依赖（逐条经 go.mod / Cargo.toml 核实，如 MiBeeNvr → onvif-go + gb28181-go）· `stream` 视频取流 · `events` 告警事件接入 MiBeeBell；专题视图另有 `lineage` 同源、`docs` 文档 · *Every edge is verified.*
-- **闭源产品** · 虚线绿框的 **MiBeeBell**（告警通知中心）与 **MiBeeReach**（远程接入平台）源码私有，二进制与功能介绍在 [mickeyzzc/releases](https://github.com/mickeyzzc/releases) 发布 · *Closed-source products ship binaries via the releases hub.*
+- **闭源产品** · 虚线绿框的 **MiBeeBell**（告警通知中心）、**MiBeeReach**（远程接入平台）与 **MiBeeHive**（运维工具链供应链中枢）源码私有；前两者的二进制与功能介绍在 [mickeyzzc/releases](https://github.com/mickeyzzc/releases) 发布 · *Closed-source products; Bell & Reach ship binaries via the releases hub.*
 - **专题视图** · 与主线无直接依赖的仓库按领域拆到下面三张图；不再维护的旧仓库不入图 · *Unrelated clusters live in their own views; unmaintained repos are left out.*
 
 ### 🔍 专题视图 · Domain Views
@@ -27,7 +27,7 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 <p align="center"><img src="product-matrix-boards-edge.svg" alt="专题视图 · 开发板与边缘：8 块开发板实验仓库，加 serialtap 与 wfp-device-sdk 两个边缘工具"></p>
 <p align="center"><img src="product-matrix-docs-portals.svg" alt="专题视图 · 文档与门户：组织主页、mibee-docs、MiBee Eye 门户、技术博客与 Hugo 主题"></p>
 
-图中简称均可通过下方精选项目表或[组织公开仓库列表](https://github.com/orgs/Mi-Bee-Studio/repositories?type=public)直达原仓库 · *Every chip maps to a repository below.*
+图中简称除闭源产品外，均可通过下方精选项目表或[组织公开仓库列表](https://github.com/orgs/Mi-Bee-Studio/repositories?type=public)直达原仓库 · *Chips map to repositories below (closed-source chips excepted).*
 
 ## ⭐ 精选项目 · Featured Projects
 

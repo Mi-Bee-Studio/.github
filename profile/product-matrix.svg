@@ -1,4 +1,4 @@
-<svg class="tm" width="980" height="660" viewBox="0 0 980 660" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，16 个公开仓库、18 条关系边；MiBeeBell、MiBeeReach、MiBeeHive、MiBeeVision 为闭源产品，Bell / Reach / Vision 二进制经 mickeyzzc/releases 发布">
+<svg class="tm" width="980" height="660" viewBox="0 0 980 660" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，收录 16 个公开仓库、18 条关系边；MiBeeBell、MiBeeReach、MiBeeHive、MiBeeVision 为闭源产品，Bell / Reach / Vision 二进制经 mickeyzzc/releases 发布">
       <style>
         .tm{font-family:'Cascadia Code','JetBrains Mono',Consolas,Menlo,'Courier New',monospace;
           --bg:#0b0f16;--panel:#10161f;--edgest:#26313f;--fg:#e6edf3;--dim:#7d8b99;--frame:#1f2733;
@@ -93,7 +93,7 @@
       <!-- boot lines -->
       <text class="ln cmd" style="--d:.1s" x="28" y="72"><tspan class="pr">❯</tspan> bee graph --org Mi-Bee-Studio --users xiqing85,mickeyzzc <tspan class="flag">--view core --featured bell,reach,hive,vision</tspan></text>
       <rect class="cur" x="927" y="61" width="8" height="14"/>
-      <text class="ln t-status" style="--d:.35s" x="28" y="96"><tspan class="t-ok">✓</tspan> resolved: 16 public repos · 18 relation edges · 4 featured closed-source products</text>
+      <text class="ln t-status" style="--d:.35s" x="28" y="96"><tspan class="t-ok">✓</tspan> resolved: 16 public repos in this core view · 18 relation edges · 4 featured closed-source products</text>
       <g class="ln" style="--d:.55s">
         <line x1="28" y1="114.5" x2="52" y2="114.5" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#mcy)"/>
         <text class="leg" x="60" y="118">dep 依赖</text>
@@ -185,7 +185,7 @@
 
       <!-- footer -->
       <line class="sep-d" x1="24" y1="596" x2="956" y2="596"/>
-      <text class="ln f-line" style="--d:2.98s" x="28" y="620"><tspan class="t-ok">Σ</tspan> <tspan class="f-sum">16 public repos · 18 relation edges</tspan> · closed: MiBeeBell, MiBeeReach, MiBeeHive, MiBeeVision</text>
+      <text class="ln f-line" style="--d:2.98s" x="28" y="620"><tspan class="t-ok">Σ</tspan> <tspan class="f-sum">16 public repos in this core view · 18 relation edges</tspan> · closed: MiBeeBell, MiBeeReach, MiBeeHive, MiBeeVision</text>
       <text class="ln f-line" style="--d:2.98s" x="956" y="620" text-anchor="end"><tspan class="refresh">↻</tspan> synced 2026-11-06</text>
       <text class="ln f-line" style="--d:3.1s" x="28" y="642"><tspan class="pr">❯</tspan> <tspan class="cur-box">█</tspan></text>
 

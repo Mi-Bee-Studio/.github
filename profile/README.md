@@ -12,14 +12,14 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 
 <div align="center">
   <a href="https://github.com/orgs/Mi-Bee-Studio/repositories?type=public" title="查看全部公开仓库">
-    <img src="product-matrix.svg" alt="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，16 个公开仓库、18 条关系边；MiBeeBell、MiBeeReach、MiBeeHive、MiBeeVision 为闭源产品（Bell / Reach / Vision 经 mickeyzzc/releases 发布）">
+    <img src="product-matrix.svg" alt="Mi&amp;Bee Studio 产品矩阵 · 核心主线：终端设备 → 协议库 → 平台服务，收录 16 个公开仓库、18 条关系边；MiBeeBell、MiBeeReach、MiBeeHive、MiBeeVision 为闭源产品（Bell / Reach / Vision 经 mickeyzzc/releases 发布）">
   </a>
 </div>
 
 - **核心主线** · 终端设备（ESP32 相机固件 / [MiBee Eye](https://github.com/xiqing85/mibee-eye-rs) 相机家族）→ 协议库（ONVIF · GB/T 28181，Go / Rust / C 三语言实现）→ 平台服务（[MiBeeNvr](https://github.com/Mi-Bee-Studio/MiBeeNvr) / [MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward) / MiBeeBell / MiBeeReach / MiBeeHive / MiBeeVision）· *Devices → protocol libraries → platform, left to right.*
 - **关系边** · `dep` 代码依赖（逐条经 go.mod / Cargo.toml 核实，如 MiBeeNvr → onvif-go + gb28181-go）· `stream` 视频取流（含 MiBeeNvr 录像 → MiBeeVision AI 分析）· `events` 告警事件接入 MiBeeBell；专题视图另有 `lineage` 同源、`docs` 文档 · *Every edge is verified.*
 - **闭源产品** · 虚线绿框的 **MiBeeBell**（告警通知中心）、**MiBeeReach**（远程接入平台）、**MiBeeHive**（运维工具链供应链中枢）与 **MiBeeVision**（视频 AI 引擎）源码私有；Bell / Reach / Vision 的二进制与功能介绍在 [mickeyzzc/releases](https://github.com/mickeyzzc/releases) 发布 · *Closed-source products; Bell, Reach & Vision ship binaries via the releases hub.*
-- **专题视图** · 与主线无直接依赖的仓库按领域拆到下面三张图；不再维护的旧仓库不入图 · *Unrelated clusters live in their own views; unmaintained repos are left out.*
+- **专题视图** · 与主线无直接依赖的仓库按领域拆到下面三张图；核心图标注的“16 个公开仓库”仅指该视图的收录范围，组织公开仓库以 [GitHub API](https://api.github.com/orgs/Mi-Bee-Studio/repos?type=public) 为准；不再维护的旧仓库不入图 · *The core diagram counts 16 selected public repos, not the full organization.*
 
 ### 🔍 专题视图 · Domain Views
 
@@ -37,6 +37,7 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 | **[MiBeeSteward](https://github.com/Mi-Bee-Studio/MiBeeSteward)** | 设备管理与监控系统，SNMP/ICMP/HTTP 探测 + Prometheus 指标 · Device management & monitoring — single-binary Go backend with embedded SvelteKit SPA |
 | **[MiBeeBell 蜂铃](https://github.com/mickeyzzc/releases/tree/main/products/mibeebell)** 🔒 | 轻量自托管告警通知中心：七类摄取入口，去抖 / 冷却 / 升级 / 静默管道，国内外多渠道，mesh 高可用（源码私有，二进制经 releases 发布）· Lightweight self-hosted alert hub — ingest, denoise, deliver; binaries via the releases hub |
 | **[MiBeeReach](https://github.com/mickeyzzc/releases/tree/main/products/mibeereach)** 🔒 | 自部署、隐私可控的统一远程接入：远程桌面 / 终端 / SSH / 内网隧道（专有软件，二进制经 releases 发布）· Self-hosted, privacy-first remote access — proprietary, binaries via the releases hub |
+| **[MiBeeVision Lite](https://github.com/mickeyzzc/releases/tree/main/products/mibee-vision)** 🔒 | MiBeeNvr 的视频 AI 引擎：目标检测、多目标跟踪、区域规则与事件回写（专有软件，内置模型 AGPL-3.0，二进制经 releases 发布）· Video-AI engine for MiBeeNvr — proprietary software with an AGPL-3.0 bundled model; binaries via the releases hub |
 | **协议库家族 · Protocol Libraries**<br>[gb28181-go](https://github.com/mickeyzzc/gb28181-go) · [gb28181-rs](https://github.com/mickeyzzc/gb28181-rs) · [onvif-go](https://github.com/mickeyzzc/onvif-go) · [onvif-rs](https://github.com/mickeyzzc/onvif-rs) · [onvif-c](https://github.com/mickeyzzc/onvif-c) | GB/T 28181 与 ONVIF 协议库（Go / Rust / C）：MiBeeNvr 与 MiBee Eye 共同的协议底座 · The protocol foundation beneath MiBeeNvr & MiBee Eye |
 | **[esp32s3-n16r8](https://github.com/Mi-Bee-Studio/esp32s3-n16r8)** | MiBee Cam 主力固件：OV3660 3MP + 人脸/移动/二维码 AI 检测、RTSP、ONVIF · Flagship MiBee Cam firmware: MJPEG streaming, face/motion/QR AI detection |
 | **[ai-thinker-esp32-cam](https://github.com/Mi-Bee-Studio/ai-thinker-esp32-cam) / [luatos-esp32s3-a10-camera](https://github.com/Mi-Bee-Studio/luatos-esp32s3-a10-camera) / [seeed-esp32s3-cam](https://github.com/Mi-Bee-Studio/seeed-esp32s3-cam)** | 多平台 ESP32 相机固件系列：MJPEG 实时流、移动侦测、OTA、NAS 自动上传 · Multi-board ESP32 camera firmware series — MJPEG streaming, motion detection, OTA & NAS upload |
@@ -51,7 +52,7 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 - **AI 应用开发与技术咨询** · AI application development & technical consulting
 - **物联网设备接入、数据采集与云端可视化** · IoT device onboarding, data collection & cloud visualization
 - **云原生架构设计、容器化与 K8s 运维** · Cloud-native architecture, containerization & Kubernetes operations
-- **企业级监控平台搭建（千亿指标规模）** · Enterprise monitoring platforms at billion-metrics-per-day scale
+- **企业级监控平台搭建** · Enterprise monitoring platform engineering
 - **嵌入式开发与智能控制系统集成** · Embedded development & smart control system integration
 - **信息安全、系统运维与 IT 技术咨询** · Information security, system operations & IT consulting
 
@@ -88,17 +89,16 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 ## ✨ 技术亮点 · Highlights
 
 - 精通 **Shell / Python / Go / Rust / C** 全栈开发 · Proficient across the full stack
-- 搭建**日千亿指标**跨地域混合云监控平台，持有 **4 项技术专利** · Built multi-region hybrid-cloud monitoring platforms handling billions of metrics per day; holder of 4 technical patents
+- 搭建跨地域混合云监控平台 · Built multi-region hybrid-cloud monitoring platforms
 - 为 **Thanos、kube-state-metrics、DeepFlow** 等开源社区贡献代码 · Active contributor to Thanos, kube-state-metrics, DeepFlow and other OSS communities
 - **KubeSphere 认证讲师**，长期技术分享与社区布道 · KubeSphere Certified Instructor, active in tech sharing & community evangelism
 - 10+ 年 IT 运维、开发、云原生全链路经验 · 10+ years of experience across IT operations, development, and cloud-native
 
-## 📊 业务数据 · By the Numbers
+## 🛠️ 工程实践 · Engineering Practice
 
-- 🌐 **120+** 在线物联网设备 · Online IoT devices
-- 🏠 **10+** 智慧家庭解决方案 · Smart-home solutions delivered
-- 📈 **72.8%** 服务可用率 · Service availability
-- ⚡ **<26ms** 平均响应延迟 · Average response latency
+- 自托管软件优先采用单二进制交付，降低部署与运维成本 · Self-hosted software favors single-binary delivery
+- 文档跟随公开发布版本更新，并提供安装、配置与排障路径 · Documentation tracks public releases with setup and troubleshooting guides
+- 产品能力以可复现的部署与测试为依据 · Capabilities are backed by reproducible deployments and tests
 
 ## 🐝 名字的由来 · The Name
 
@@ -107,7 +107,7 @@ We focus on **software development, AI applications, IoT, cloud-native, observab
 
 ## 📞 联系我们 · Contact Us
 
-- 🌍 官网 · Website: <https://www.mickeyzzc.tech/>
+- 🌍 官网 · Website: <https://www.mickeybee.cn/>
 - 📝 技术博客 · Blog: <https://blog.mickeyzzc.tech/>
 - 📧 邮箱 · Email: [mickey_zzc@mickeybee.cn](mailto:mickey_zzc@mickeybee.cn)
 
